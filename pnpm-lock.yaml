@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@ionic/react':
+    specifier: ^7.6.6
+    version: 7.6.6(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -119,6 +122,27 @@ packages:
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
+
+  /@ionic/core@7.6.6:
+    resolution: {integrity: sha512-WstnLHiR8ipW2ASdO/eqSwgMHCuVvJE3qsUNPHWkup9f08/bcbKYZpOfaWNLw/ftNqEpFbjiRuocoYYyLP0/gw==}
+    dependencies:
+      '@stencil/core': 4.11.0
+      ionicons: 7.2.2
+      tslib: 2.6.2
+    dev: false
+
+  /@ionic/react@7.6.6(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3J18wUMMGBS2jkTwBRWYpkXvhFYpBcLqKF9nq/9aJL55GtFbu3uAnvM8Km3LkQUYqk4ddpGQr5bvzTvhYcxMMQ==}
+    peerDependencies:
+      react: '>=16.8.6'
+      react-dom: '>=16.8.6'
+    dependencies:
+      '@ionic/core': 7.6.6
+      ionicons: 7.2.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      tslib: 2.6.2
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -284,6 +308,12 @@ packages:
   /@rushstack/eslint-patch@1.7.1:
     resolution: {integrity: sha512-irBNt5094vHloql4QzY8RdeI8Tns2kGsaiJ/m6jENWx9xCz/m/F4gKQ1dAailFmpL0Id9tgWLqZbTUO4SINM/Q==}
     dev: true
+
+  /@stencil/core@4.11.0:
+    resolution: {integrity: sha512-zsKhgIkTGo+s7IthitxR/MKiMS3Ck1yIypOdXr0aE6ofboKqe9NdffTcxZ0vel0wD2bZYOb6WfPMzuhRKk6+FA==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+    dev: false
 
   /@swc/helpers@0.5.2:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
@@ -1482,6 +1512,12 @@ packages:
       hasown: 2.0.0
       side-channel: 1.0.4
     dev: true
+
+  /ionicons@7.2.2:
+    resolution: {integrity: sha512-I3iYIfc9Q9FRifWyFSwTAvbEABWlWY32i0sAVDDPGYnaIZVugkLCZFbEcrphW6ixVPg8tt1oLwalo/JJwbEqnA==}
+    dependencies:
+      '@stencil/core': 4.11.0
+    dev: false
 
   /is-array-buffer@3.0.2:
     resolution: {integrity: sha512-y+FyyR/w8vfIRq4eQcM1EYgSTnmHXPqaF+IgzgraytCFq5Xh8lllDVmAZolPJiZttZLeFSINPYMaEJ7/vWUa1w==}
