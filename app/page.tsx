@@ -22,7 +22,7 @@ export default function Home() {
         src={Hero1}
         alt="Traditional Restaurant"
         objectFit="cover"
-        className="contrast-75"
+        className="contrast-75 -z-10"
       />
     </div>
   );
