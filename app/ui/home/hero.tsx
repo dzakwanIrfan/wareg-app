@@ -10,13 +10,16 @@ const galindo = Galindo({
    });
 
 export default function Hero() {
+    const position = 'absolute top-25rem left-36';
+    const width = 'w-30rem';
+    const placeholder = 'Mau makan di mana hari ini?'
     return (
         <div id="hero" className="relative">
             <div className={`heroContent absolute z-10 top-56 left-36 text-neutral-50 text-8xl text-shadow ${galindo.className}`}>
                 <div className="line1">Kuliner Lokal,</div>
                 <div className="line2">Rating Global!</div>
             </div>
-            <SearchBar />
+            <SearchBar position={position} width={width} placeholder={placeholder}/>
             <Image 
                 src={Hero1}
                 alt="Traditional Restaurant"
