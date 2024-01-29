@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
         <header
-            className="bg-neutral-50 rounded-b-3xl justify-between px-36 py-4 flex items-center fixed right-0 top-0 w-full z-40"
+            className="bg-neutral-50 rounded-b-3xl justify-between px-36 py-4 flex items-center fixed right-0 top-0 w-full z-40 shadow"
         >
             <Link
                 href='/'

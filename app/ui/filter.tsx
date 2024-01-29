@@ -2,6 +2,7 @@ import Link from "next/link";
 import SearchBar from "./home/search-bar";
 import { Sort } from "iconoir-react";
 import Cards from "./cards";
+import Pagination from "./pagination";
 
 export default function Filter() {
     const position = 'border-no-radius hover:shadow-md';
@@ -15,16 +16,18 @@ export default function Filter() {
                     href='/'
                     className="block"
                 >
-                    <div className="sort flex items-center border-mini gap-4 px-4 py-2 hover:bg-neutral-50 hover:shadow-md">
-                        <Sort />
-                        <p>Sort by <span className="font-bold">Rating</span></p>
+                    <div className="sort flex items-center border-mini gap-4 px-4 py-2 hover:bg-neutral-50 hover:shadow-md transition-all">
+                        <Sort 
+                            className="text-neutral-800"
+                        />
+                        <p className="text-neutral-800">Sort by <span className="font-bold">Rating</span></p>
                     </div>
                 </Link>
             </div>
             <Cards />
             <Cards />
             <Cards />
-            <Cards />
+            <Pagination />
         </>
     );
 }

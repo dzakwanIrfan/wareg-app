@@ -2,7 +2,7 @@ import { Search } from "iconoir-react";
 
 export default function SearchBar({position, width, placeholder}: {position: string, width: string, placeholder: string}) {
     return (
-        <div className={`search flex z-10 ${position} bg-neutral-50 items-center px-4 py-1 rounded-full gap-4 pe-1 shadow`}>
+        <div className={`search flex z-10 ${position} bg-neutral-50 items-center px-4 py-1 rounded-full gap-4 pe-1 shadow transition-all`}>
             <label htmlFor="">
                 <Search 
                     className="text-2xl text-orange-500"
