@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="bg-orange-500 text-neutral-50 text-center z-50 py-8 mt-12">
+        <footer className="bg-orange-500 text-neutral-50 text-center z-50 py-8 mt-12 rounded-t-3xl item-shadow">
             <div className="copyright mb-2 text-sm">© 2024 Warég, Inc.</div>
             <div className="socmeds flex justify-center items-center text-3xl gap-8">
                 <Link

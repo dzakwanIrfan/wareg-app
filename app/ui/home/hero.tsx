@@ -20,11 +20,14 @@ export default function Hero() {
                 <div className="line2">Rating Global!</div>
             </div>
             <SearchBar position={position} width={width} placeholder={placeholder}/>
+            <div 
+                className="HeroShadow w-full h-60 absolute z-10 bottom-0">
+            </div>
             <Image 
                 src={Hero1}
                 alt="Traditional Restaurant"
                 objectFit="cover"
-                className="contrast-75 -z-10"
+                className="contrast-75 -z-10 h-dvh object-cover"
             />
         </div>
     );
