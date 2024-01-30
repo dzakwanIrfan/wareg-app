@@ -19,7 +19,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-                href='/'
+                href='/discover'
                 className="absolute right-1/2 top-12"
             >
                 <Image 
