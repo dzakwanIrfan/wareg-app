@@ -12,6 +12,10 @@ export default function Slider() {
 
     const [pict, setPict] = React.useState(0);
 
+    if (images.length === 0) {
+        return null;
+    }
+
     function next() {
         setPict((pict + 1) % images.length);
     }
@@ -20,9 +24,6 @@ export default function Slider() {
         setPict((pict - 1 + images.length) % images.length);
     }
 
-    if (images.length === 0) {
-        return null;
-    }
 
     return (
         <div className="mt-20 relative" id="slide">
