@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
         <header
-            className="bg-neutral-50 rounded-b-3xl justify-between px-36 py-4 flex items-center fixed right-0 top-0 w-full z-40 shadow"
+            className="bg-neutral-50 rounded-b-3xl justify-between px-36 py-4 flex items-center fixed right-0 top-0 w-full h-20 z-40 shadow"
         >
             <Link
                 href='/'
@@ -20,14 +20,14 @@ export default function Navbar() {
 
             <Link
                 href='/discover'
-                className="absolute right-1/2 top-12"
+                className="absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2"
             >
                 <Image 
                     src='/logo/icon-logo.png'
                     alt="Waren Logo"
-                    width={50}
-                    height={50}
-                    className="transition-all hover:scale-150 hover:rotate-180"
+                    width={500}
+                    height={500}
+                    className="transition-all hover:scale-150 hover:rotate-180 w-14 h-14"
                 />
             </Link>
 

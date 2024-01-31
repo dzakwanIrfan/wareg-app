@@ -9,6 +9,14 @@
   url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
 }
 
+.text-xxs{
+  font-size: 10px;
+}
+
+.text-minor{
+  color: rgba(38, 38, 38, 0.5);
+}
+
 .text-shadow{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -23,6 +31,10 @@
 
 .w-30rem{
   width: 30rem;
+}
+
+.h-30rem{
+  height: 30rem;
 }
 
 .w-40rem{

@@ -11,7 +11,7 @@ export default function CreateButton() {
                     Tambahkan tempat!
                 </div>
                 <Plus 
-                    className="plus border-no-radius bg-orange-500 text-5xl rounded-xl text-neutral-50 item-shadow hover:bg-neutral-50 hover:text-orange-500 transition-all"
+                    className="border-no-radius bg-orange-500 text-5xl rounded-xl text-neutral-50 item-shadow hover:bg-neutral-50 hover:text-orange-500 transition-all"
                 />
             </div>
         </Link>

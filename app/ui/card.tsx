@@ -18,7 +18,7 @@ export default function Card() {
                     </button>
                 </div>
                 <Link
-                    href='/'
+                    href='/warung/1/'
                 >
                     <Image 
                         src='/img/hero2.jpg'
