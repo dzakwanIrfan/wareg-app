@@ -22,7 +22,7 @@ Follow these steps to set up Wareg locally:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/wareg.git
+   git clone https://github.com/dzakwanIrfan/wareg.git
    ```
 
 2. **Install Dependencies:**
