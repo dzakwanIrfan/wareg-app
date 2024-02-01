@@ -22,7 +22,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <CreateButton />
         <Navbar />
-        {children}
+        <div style={{ overflowX: "hidden" }}>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
