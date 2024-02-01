@@ -22,12 +22,12 @@ Follow these steps to set up Wareg locally:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/dzakwanIrfan/wareg.git
+   git clone https://github.com/dzakwanIrfan/wareg-app.git
    ```
 
 2. **Install Dependencies:**
    ```bash
-   cd wareg
+   cd wareg-app
    npm install
    ```
 
