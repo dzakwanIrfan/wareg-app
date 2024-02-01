@@ -32,7 +32,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-                href='/'
+                href='/login'
             >
                 <div id="sign-in" className="text-neutral-50 bg-orange-500 px-4 py-1 rounded-full hover:transition-all hover:outline hover:outline-orange-500 hover:bg-neutral-50 hover:text-neutral-800 font-bold">
                     Sign in
