@@ -59,7 +59,10 @@ export default function Profil() {
                     className="my-2 border-t-1 border-neutral-800"
                 />
                 <div className="flex mt-8">
-                    <span style={{ width: '5%' }}>
+                    <Link
+                        href='/profil/kushida'
+                        style={{ width: '5%' }}
+                    >
                         <Image 
                             src='/img/michael.jpg'
                             alt="michael"
@@ -67,9 +70,13 @@ export default function Profil() {
                             height={500}
                             className="size-12 object-cover rounded-full"
                         />
-                    </span>
+                    </Link>
                     <div className="flex flex-col text-sm" style={{ width: '95%' }}>
-                        <div className="text-neutral-800 font-bold">@michael_dam123 <span className="font-normal text-minor">3 hari yang lalu</span></div>
+                        <Link
+                            href='/profil/kushida'
+                        >
+                            <div className="text-neutral-800 font-bold">@michael_dam123 <span className="font-normal text-minor">3 hari yang lalu</span></div>
+                        </Link>
                         <div className="text-neutral-800 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vero sed soluta blanditiis similique commodi illum aliquid? Esse nisi deserunt suscipit id, reiciendis vitae molestiae cupiditate aliquam, maxime sunt dicta harum quas? Iste corrupti aperiam perferendis blanditiis sequi commodi voluptatibus dicta vitae quae voluptatum repudiandae unde earum, rerum nihil qui, aliquam nobis sit? Cumque sint voluptatum iure ut, quaerat dignissimos, modi vel doloremque vero eveniet cupiditate laboriosam nam facilis sunt consequuntur, minus voluptates dolore perferendis? Temporibus incidunt laboriosam placeat vitae debitis mollitia ducimus quaerat itaque, voluptates unde animi quod natus nostrum exercitationem repudiandae praesentium, architecto, optio quo veniam recusandae consequuntur tempora? Enim exercitationem, delectus quas natus dolore soluta totam porro provident. Excepturi ex aut quis rerum placeat. Magni, nemo maxime.</div>
                         <div className="flex gap-4 mt-4">
                             <Image 
@@ -97,7 +104,10 @@ export default function Profil() {
                     </div>
                 </div>
                 <div className="flex mt-8">
-                    <span style={{ width: '5%' }}>
+                    <Link
+                        href='/profil/kushida'
+                        style={{ width: '5%' }}
+                    >
                         <Image 
                             src='/img/michael.jpg'
                             alt="michael"
@@ -105,9 +115,13 @@ export default function Profil() {
                             height={500}
                             className="size-12 object-cover rounded-full"
                         />
-                    </span>
+                    </Link>
                     <div className="flex flex-col text-sm" style={{ width: '95%' }}>
-                        <div className="text-neutral-800 font-bold">@michael_dam123 <span className="font-normal text-minor">3 hari yang lalu</span></div>
+                        <Link
+                            href='/profil/kushida'
+                        >
+                            <div className="text-neutral-800 font-bold">@michael_dam123 <span className="font-normal text-minor">3 hari yang lalu</span></div>
+                        </Link>
                         <div className="text-neutral-800 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim deserunt sunt est in quas accusamus? Nostrum suscipit quia nemo excepturi natus vel, eaque autem!</div>
                         <div className="flex gap-4 mt-4">
                             <Image 
@@ -121,7 +135,10 @@ export default function Profil() {
                     </div>
                 </div>
                 <div className="flex mt-8">
-                    <span style={{ width: '5%' }}>
+                    <Link
+                        href='/profil/kushida'
+                        style={{ width: '5%' }}
+                    >
                         <Image 
                             src='/img/michael.jpg'
                             alt="michael"
@@ -129,9 +146,13 @@ export default function Profil() {
                             height={500}
                             className="size-12 object-cover rounded-full"
                         />
-                    </span>
+                    </Link>
                     <div className="flex flex-col text-sm" style={{ width: '95%' }}>
-                        <div className="text-neutral-800 font-bold">@michael_dam123 <span className="font-normal text-minor">3 hari yang lalu</span></div>
+                        <Link
+                            href='/profil/kushida'
+                        >
+                            <div className="text-neutral-800 font-bold">@michael_dam123 <span className="font-normal text-minor">3 hari yang lalu</span></div>
+                        </Link>
                         <div className="text-neutral-800 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum culpa repellat architecto facere itaque dolore omnis, sapiente totam ullam praesentium sed, eos numquam sunt odit ut reprehenderit molestias recusandae quidem dolor? Iusto nulla dolore veritatis tempora qui sed nobis dicta? Autem necessitatibus animi tenetur veniam, qui ut nisi neque facilis.</div>
                         <div className="flex gap-4 mt-4">
                             
