@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wareg - Warung Rekomendasi
+
+Wareg is a web platform designed to make it easy for users to rate and review local eateries. The name "Wareg" is derived from "Warung Rekomendasi," reflecting its purpose of recommending and reviewing local places to eat. The platform allows users to provide star ratings, write reviews, and contribute new eateries to the community.
+
+## Features
+
+### 1. Rating and Reviews
+- Users can rate eateries on a scale of 1 to 5 stars.
+- Detailed review sections allow users to share their experiences and recommendations.
+
+### 2. Add New Eateries
+- Users have the option to add new local eateries to the platform.
+- Submission includes basic information about the place, such as name, address, and category.
+
+### 3. Next.Js TypeScript Implementation
+- The website is built using Next.Js, providing a smooth and efficient user experience.
+- TypeScript ensures type safety and enhances development productivity.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up Wareg locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/dzakwanIrfan/wareg.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Dependencies:**
+   ```bash
+   cd wareg
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run the Development Server:**
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   Open [http://localhost:3000](http://localhost:3000) in your browser to access Wareg locally.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+- Browse and explore local eateries listed on the platform.
+- Rate and review your favorite places.
+- Contribute by adding new eateries to help the community grow.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Next.Js:** A React-based web framework for building modern web applications.
+- **TypeScript:** Adds static typing to the JavaScript language, catching common errors during development.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We welcome contributions! If you'd like to contribute to Wareg, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Happy Eating with Wareg! 🍔🌮🍜**
