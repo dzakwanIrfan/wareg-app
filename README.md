@@ -2,6 +2,8 @@
 
 Wareg is a web platform designed to make it easy for users to rate and review local eateries. The name "Wareg" is derived from "Warung Rekomendasi," reflecting its purpose of recommending and reviewing local places to eat. The platform allows users to provide star ratings, write reviews, and contribute new eateries to the community.
 
+Figma: https://www.figma.com/file/5FCYPczRMDvx3at56THaKF/War%C3%A9g?type=design&node-id=0%3A1&mode=design&t=KzCQm29CdB8Unygt-1
+
 ## Features
 
 ### 1. Rating and Reviews
