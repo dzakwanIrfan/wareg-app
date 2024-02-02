@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function CreateButton() {
     return (
         <Link
-            href='/'
+            href='/tambah-warung'
         >
             <div className="add fixed bottom-12 right-12 z-50 flex flex-col items-center gap-2">
                 <div className="info-create shadow">
