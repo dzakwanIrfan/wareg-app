@@ -1,6 +1,5 @@
+import { SettingProfile, Ulasan, Wishlist } from "@/app/ui/profil/buttons";
 import Title from "@/app/ui/title";
-import { Settings, StatsUpSquare } from "iconoir-react/regular";
-import { Heart } from "iconoir-react/solid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,37 +16,9 @@ export default function Profil() {
                 />
             </div>
             <div className="flex items-center justify-end gap-8 mt-4">
-                <Link
-                    href="/"
-                    className="bg-neutral-50 p-3 border-mini item-shadow button-hover"
-                >
-                    <Settings 
-                        className="text-neutral-800 text-xs btn"
-                    />
-                </Link>
-                <button type="button" className="border-mini bg-neutral-50 py-3 px-10 flex items-center gap-1 item-shadow">
-                    <Heart 
-                        className="text-neutral-800 text-xs"
-                    />
-                    <span
-                        className="text-xs"
-                    >
-                        Wishlist
-                    </span>
-                </button>
-                <Link
-                    href='/'
-                    className="border-mini bg-neutral-50 py-3 px-10 flex items-center gap-1 button-hover item-shadow"
-                >
-                    <StatsUpSquare 
-                        className="text-neutral-800 text-xs btn"
-                    />
-                    <span
-                        className="text-xs btn"
-                    >
-                        13 Ulasan
-                    </span>
-                </Link>
+                <SettingProfile />
+                <Wishlist />
+                <Ulasan />
             </div>
             <div className="ml-32 my-12">
                 <h1 className="text-2xl font-bold">Kushida Kikyo | <span>@kushida_kikyo123</span></h1>

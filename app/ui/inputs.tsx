@@ -12,6 +12,15 @@ interface InputProps {
     }
 }
 
+interface InputTextArea{
+    inputTextArea: {
+        id: string;
+        label: string;
+        max: number;
+        display: string;
+    }
+}
+
 interface Places {
     id: string;
     name: string;
@@ -233,7 +242,7 @@ export function InputFoto() {
     );
 }
 
-export function TextArea() {
+export function TextArea({inputTextArea}: InputTextArea) {
     const [inputValue, setInputValue] = React.useState('');
     const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
         const value = event.target.value;
@@ -241,20 +250,20 @@ export function TextArea() {
     }
 
     let warn = 'text-neutral-800';
-    if (inputValue.length === 255){
+    if (inputValue.length === inputTextArea.max){
         warn = 'text-red-500';
     }
 
     return (
         <div className="flex flex-col justify-center mt-4">
-            <div className="flex justify-end items-baseline w-full">
-                <label htmlFor='review' className="text-neutral-800" style={{ display: 'none' }}>Berikan Ulasan</label>  
-                <span className={`text-xs ${warn}`}>{inputValue.length}/255</span>
+            <div className={`flex items-baseline w-full ${inputTextArea.display === 'none' ? 'justify-end' : 'justify-between'}`}>
+                <label htmlFor={inputTextArea.id} className="text-neutral-800" style={{ display: inputTextArea.display }}>{inputTextArea.label}</label>  
+                <span className={`text-xs ${warn}`}>{inputValue.length}/{inputTextArea.max}</span>
             </div>
             <textarea
-                maxLength={255} 
-                name="review" 
-                id="review"
+                maxLength={inputTextArea.max} 
+                name={inputTextArea.id}
+                id={inputTextArea.id}
                 className='focus:outline-orange-500 text-neutral-800 bg-neutral-50 border-mini min-w-full h-20 text-sm px-4 py-2'
                 onChange={handleChange}
             >
@@ -264,9 +273,9 @@ export function TextArea() {
     );
 }
 
-export function Submit() {
+export function Submit({text}: {text: string}) {
     return (
-        <button type="submit" className="bg-orange-500 px-4 py-2 w-20 border-mini text-neutral-50 item-shadow m-auto">KIRIM</button>
+        <button type="submit" className="bg-orange-500 px-4 py-2 w-20 border-mini text-neutral-50 item-shadow m-auto">{text}</button>
     );
 }
 

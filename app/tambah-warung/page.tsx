@@ -14,6 +14,13 @@ export default function TambahWarung() {
         style: 'w-96'
     }
 
+    const ulasan = {
+        id: 'ulasan',
+        label: 'Berikan Ulasan',
+        max: 250,
+        display: 'none',
+    }
+
     return (
         <div className="container m-auto bg-neutral-50 mt-40 border-mini item-shadow px-28 py-8">
             <form action="post" className="flex flex-col gap-12">
@@ -49,9 +56,9 @@ export default function TambahWarung() {
                             className="text-neutral-800"
                         />
                     </div>
-                    <TextArea />
+                    <TextArea inputTextArea={ulasan} />
                 </span>
-                <Submit />
+                <Submit text="Kirim" />
             </form>
         </div>
     );
