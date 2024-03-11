@@ -1,6 +1,6 @@
 import { CloudUpload } from 'iconoir-react';
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ChangeEvent } from 'react';
 
 interface InputProps {
     input: {
@@ -16,6 +16,12 @@ interface Places {
     id: string;
     name: string;
 }
+
+interface SelectedFile {
+    type: string;
+    name: string;
+}
+  
 
 export function Input({input}: InputProps) {
     const [inputValue, setInputValue] = React.useState('');
@@ -160,43 +166,68 @@ export function Select() {
 }
 
 export function InputFoto() {
+
+    const [images, setImages] = useState<string[]>([]);
+
+    const pictInput = () => {
+        document.getElementById('foto')?.click();
+    };
+
+    const pictRender = (e: ChangeEvent<HTMLInputElement>) => {
+        const files = e.target.files;
+
+        if (!files || files.length === 0) {
+        alert('Please select a valid image file.');
+        return;
+        }
+
+        if (images.length >= 3) {
+        alert('You can only upload up to 3 images.');
+        return;
+        }
+
+        const newImages = [...images];
+        const file = files[0] as SelectedFile;
+
+        if (!file.type.startsWith('image/')) {
+        alert('Hanya file gambar yang didukung.');
+        return;
+        }
+
+        newImages.push(URL.createObjectURL(file));
+        setImages(newImages);
+    };
+
     return (
         <div className="flex flex-col justify-center mt-4 box-border w-full">
             <div className="flex justify-between items-baseline">
                 <label htmlFor='foto' className="text-neutral-800">Tambahkan foto</label>  
-                <span className={`text-xs`}>2/3</span>
+                <span className={`text-xs`}>{images.length}/3</span>
             </div>
             <input 
                 type='file'
                 id='foto'
                 className='hidden'
+                multiple
+                accept='image/*'
+                onChange={(e) => pictRender(e)}
             />
-            <div className="flex justify-center items-center cursor-pointer item-shadow gap-2 bg-orange-500 py-8 font-bold text-neutral-50 border-mini">
+            <div className="flex justify-center items-center cursor-pointer item-shadow gap-2 bg-orange-500 py-8 font-bold text-neutral-50 border-mini" onClick={pictInput}>
                 <CloudUpload />
                 <p>Unggah foto warung</p>
             </div>
             <div className="flex items-center columns-3 gap-2 mt-8 box-border overflow-x-auto" id="photos">
-                <Image 
-                    alt='hero2'
-                    src='/img/hero2.jpg'
-                    width={200}
-                    height={200}
-                    className='h-20 object-cover rounded'
-                />
-                <Image 
-                    alt='hero2'
-                    src='/img/hero2.jpg'
-                    width={200}
-                    height={200}
-                    className='h-20 object-cover rounded'
-                />
-                <Image 
-                    alt='hero2'
-                    src='/img/michael.jpg'
-                    width={200}
-                    height={200}
-                    className='h-20 object-cover rounded'
-                />
+                {images.map((imageURL, index) => (
+                    <Image 
+                        key={index}
+                        alt={`thumbnail ${index + 1}`}
+                        src={imageURL}
+                        width={200}
+                        height={200}
+                        className='h-20 object-cover rounded'
+                        id='foto1'
+                    />
+                ))}
             </div>
         </div>
     );
@@ -238,3 +269,5 @@ export function Submit() {
         <button type="submit" className="bg-orange-500 px-4 py-2 w-20 border-mini text-neutral-50 item-shadow m-auto">KIRIM</button>
     );
 }
+
+
